@@ -10,15 +10,7 @@ class Statistics extends Model
 	protected $table = 'statistics';
 	public $timestamps = false;
 
-	public function FunctionName($value='')
-	{
-		// $flights = $this::where('active', 1)
-  //              ->orderBy('name', 'desc')
-  //              ->take(10)
-  //              ->get();
-	}
-
-    public static function getReports($request = 1)
+	public static function getReports($request = 1)
     {
         
         $select_type = [

@@ -14,6 +14,13 @@ class CreateStatisticsTable extends Migration
     {
         Schema::create('statistics', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('page');
+            $table->string('referrer');
+            $table->string('browser');
+            $table->string('os');
+            $table->string('geo');
+            $table->string('ip');
+            $table->string('un_cookie');
             $table->timestamps();
         });
     }

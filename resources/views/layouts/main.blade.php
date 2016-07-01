@@ -47,6 +47,7 @@
               </li>
               <li> <a href="/gallery">Gallery</a></li>
               <li> <a href="/contact">Contact</a></li>
+              <li> <a href="/upload">Upload</a></li>
              
             </ul>
             <ul class="nav navbar-nav navbar-right">

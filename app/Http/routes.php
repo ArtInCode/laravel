@@ -24,6 +24,13 @@ Route::get('/contact', function () {
     return view('pages.contact');
 });
 
+/*** Upload****/
+Route::get('upload', function() {
+ return view('pages.upload');
+});
+
+Route::post('apply/upload', 'FileUploadController@upload');
+
 /***Car pages****/
 Route::get('/cars', [
 			    'uses' => 'CarsController@main'
@@ -56,6 +63,7 @@ Route::get('/tools/{categ}/{page}', [
 			]);
 /*** Saeving traffic****/
 Route::post('/analitic','StatisticsController@saveRequest');
+
 
 
 /***Admin pages****/
